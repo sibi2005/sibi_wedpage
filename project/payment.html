@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment - ShopEase</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #4e697d;
+      color: #333;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background-color: #007bff;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #e2e2e2;
+    }
+
+    /* ---------- Payment Section ---------- */
+    .payment-section {
+      max-width: 600px;
+      background: #fff;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-section h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .payment-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f8f9fa;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .payment-option:hover {
+      background-color: #e9f2ff;
+      border-color: #007bff;
+    }
+
+    input[type="radio"] {
+      transform: scale(1.2);
+      accent-color: #007bff;
+    }
+
+    label {
+      flex: 1;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* ---------- Form Inputs ---------- */
+    .card-details,
+    .upi-details {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-details label,
+    .upi-details label {
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+    }
+
+    /* ---------- Button ---------- */
+    .pay-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .pay-btn a{
+       text-decoration: none;
+    }
+
+    .pay-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">ShopEase</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Payment Section -->
+  <section class="payment-section">
+    <h1 style="color: #007bff;">Select Payment Method</h1>
+
+    <form>
+      <!-- Payment Options -->
+      <div>
+        <div class="payment-option">
+          <input type="radio" name="method" id="debit" checked />
+          <label for="debit">💳 Debit Card</label>
+        </div>
+
+        <div class="payment-option">
+          <input type="radio" name="method" id="credit" />
+          <label for="credit">💰 Credit Card</label>
+        </div>
+
+        
+      <!-- Card Details Section -->
+      <div class="card-details">
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" />
+
+        <label>Expiry Date</label>
+        <input type="text" placeholder="MM/YY" />
+
+        <label>CVV</label>
+        <input type="password" placeholder="123" />
+      </div>
+
+        <div class="payment-option">
+          <input type="radio" name="method" id="upi" />
+          <label for="upi">📱 UPI (GPay / PhonePe / Paytm)</label>
+        </div>
+
+         <!-- UPI Section -->
+      <div class="upi-details">
+        <label>Enter UPI ID</label>
+        <input type="text" placeholder="example@upi" />
+      </div>
+
+        <div class="payment-option">
+          <input type="radio" name="method" id="cod" />
+          <label for="cod">💵 Cash on Delivery</label>
+        </div>
+      </div>
+
+      <button type="submit" class="pay-btn"><a href="thank_you.html">Confirm Payment</a></button>
+    </form>
+  </section>
+</body>
+</html>

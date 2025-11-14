@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - E-commerce Store</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0077ff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #0077ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right,  rgb(106 106 106 / 60%), rgba(0,0,0,0.7)), url('./one.jpeg') center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .hero button {
+      padding: 15px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background-color: #fff;
+      color: #0077ff;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #0077ff;
+      color: white;
+    }
+
+    .btn a{
+      text-decoration: none;
+      color: aqua;
+    }
+
+    /* Info Section */
+    .info {
+      min-height: 80vh;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .info h2 {
+      font-size: 40px;
+      color: #0077ff;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      font-size: 20px;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">ShopEase</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">🛒cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to ShopEase</h1>
+    <p>Discover amazing deals, top brands, and exclusive offers — all in one place.</p>
+    <button class="btn"><a href="Products.html">Shop Now</a></button>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info">
+    <h2>Explore Our Categories</h2>
+    <p>ShopEase brings you an extensive collection of products across electronics, fashion, home essentials, and more. Experience seamless shopping, fast delivery, and reliable service at your fingertips.</p>
+  </section>
+
+</body>
+</html>

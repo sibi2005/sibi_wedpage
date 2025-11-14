@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - ShopEase</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">ShopEase</div>
+    <nav>
+      <ul>
+       <li><a href="home.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">🛒cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart-container">
+
+      <!-- Cart Item 1 -->
+      <div class="cart-item">
+        <img src="./Smart Watch.jpg" alt="Product">
+        <div class="item-details">
+          <h2>Smart Watch</h2>
+          <p>Price: ₹2,499</p>
+          <p>Quantity: <input type="number" value="1" min="1"></p><br>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- Cart Item 2 -->
+      <div class="cart-item">
+        <img src="./Wireless Headphones.jpg" alt="Product"><br>
+        <div class="item-details">
+          <h2>Wireless Headphones</h2>
+          <p>Price: ₹1,799</p>
+          <p>Quantity: <input type="number" value="1" min="1"></p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- Cart Item 3 -->
+      <div class="cart-item">
+        <img src="./Sports Shoes.jpg" alt="Product"><br>
+        <div class="item-details">
+          <h2>Sports Shoes</h2>
+          <p>Price: ₹3,299</p>
+          <p>Quantity: <input type="number" value="1" min="1"></p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- Cart Item 4 -->
+      <div class="cart-item">
+        <img src="./Bluetooth Speaker.jpg" alt="Product"><br>
+        <div class="item-details">
+          <h2>Bluetooth Speaker</h2>
+          <p>Price: ₹999</p>
+          <p>Quantity: <input type="number" value="1" min="1"></p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <!-- Cart Item 5 -->
+      <div class="cart-item">
+        <img src="./TWS.jpg" alt="Product"><br>
+        <div class="item-details">
+          <h2>Bluetooth Speaker</h2>
+          <p>Price: ₹999</p>
+          <p>Quantity: <input type="number" value="1" min="1"></p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+       
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <h3>Cart Summary</h3>
+        <p>Subtotal: ₹8,596</p>
+        <p>Shipping: ₹100</p>
+        <h4>Total: ₹8,696</h4>
+        <button class="btn"><a href="payment.html">Proceed to payment</a></button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
